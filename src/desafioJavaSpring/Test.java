@@ -1,5 +1,6 @@
 package desafioJavaSpring;
 
+import desafioJavaSpring.facade.Facade;
 import desafioJavaSpring.singleton.Singleton;
 import desafioJavaSpring.singleton.SingletonAvechado;
 import desafioJavaSpring.singleton.SingletonHolder;
@@ -39,6 +40,10 @@ public class Test {
         robo.mover();
         robo.mover();
         robo.mover();
+
+        //Facade
+        Facade facade = new Facade();
+        facade.migrarCliente("Vhinny","51170150");
 
     }
 }
